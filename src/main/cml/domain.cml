@@ -1,58 +1,187 @@
-Domain Gestión de Marketing y Fidelización {
-  domainVisionStatement = "XXXXXX"
+Domain GestiondeMarketingyFidelizacionDomain {
+  domainVisionStatement = "El modelo permitirá representar una plataforma revolucionaria de gestión de marketing que plasma las relaciones entre usuarios cuyos roles son marca, afiliado, creador de contenido, embajador de marca y socio B2B, todas bajo el mismo techo. Este modelo se basa en los cuatro pilares de negocio que son sus servicios, siendo estos los subdominios del sistema. 
+  1. Marketing de afiliados 
+  2. Marketing de influencers y creadores de contenidos
+  3. Programas de lealtad
+  4. Gestión de alianzas
+  Estos servicios, utilizados de forma integral, permiten a los usuarios de la plataforma unificar diferentes iniciativas de marketing en un único punto, potenciando el impacto de las marcas y creadores de contenido sobre afiliados, embajadores de marca y socos B2B.
+  Estos servicios se enfocan en crear, escalar y optimizar asociaciones estratégicas entre todos los usuarios de la plataforma. El modelo debe permitir las siguientes actividades de valor:
+  1. Creadores de contenido: para descubrir audiencia potencial
+  2. Marcas: para descubrir mercados de productos o servicios específicos 
+  3. Afiliados: brindar beneficios por compras o suscripciones,
+  4. Embajadores de marca:  dar mayores preferencias e incentivos económicos por referidos5. Socios B2B: ser una fuente reputable y relevante de datos. El modelo se debe enfocar en determinar qué rol se beneficia de cada servicio provisto por la plataforma. Las relaciones entre los servicios y los roles contemplados por la plataforma deben ser comprensible para todos los interesados internos y externos a AeroAlpes de manera que sirva de guía estratégica e insumo para la toma de decisiones."
 
-  Subdomain Marketing de Afiliados {
-     type = CORE_DOMAIN
-    domainVisionStatement = "xxxxx"
-
-  }
-
-  Subdomain Marketing de Influencers y Creadores de Contenido {
+  Subdomain MarketingdeAfiliados {
     type = CORE_DOMAIN
-    domainVisionStatement = "xxxxx"
+    domainVisionStatement = "El modelo del subdominio core de marketing de afiliados debe representar la automatización y gestión de programas de afiliación de manera que las marcas consigan aumentar el volumen de fidelización de clientes al convertirlos en afiliados.El modelo debe representar cómo se transforman interacciones (clics, ventas) en reglas de comisión dinámicas y recomendaciones personalizadas, basadas en tendencias de mercado y audiencia. Utilizando los servicios de Programa de Lealtad y de Marketing de Influencers y Creadores de Contenido se puede incrementar la cantidad de afiliados y fortalecer la audiencia para cada marca mientras se provee un servicio diferenciador de beneficios a los afiliados. Esto permite crear un círculo virtuoso donde los afiliados pueden convertirse en creadores de contenido o embajadores de marca y viceversa.
+    El Marketing de Afiliados da una propuesta de valor a los siguientes roles:
+
+    1. Afiliados: dar acceso a beneficios tales como descuentos, acceso prioritario a eventos, regalos, cupones, etc.
+    2. Marcas: permite construir la reputación de su negocio y aumentar el volumen de ventas al convertir clientes casuales en clientes leales.
+    Este modelo debe estar creado de forma que el análisis y modelado de información permite la implementación de tableros de control o dashboards, que sirva a las marcas como guía para determinar la viabilidad de sus campañas de fidelización y tomar decisiones de marketing que le permitan hacer uso de los otros servicios de la plataforma, tanto directa como indirectamente."
   }
 
-  Subdomain Programas de Lealtad {
+  Subdomain MarketingdeInfluencersyCreadoresdeContenido {
     type = CORE_DOMAIN
-    domainVisionStatement = "xxxxx"
+    domainVisionStatement = "El modelo de subdominio core de marketing de influencers y creadores de contenido se enfoca en representar a un actor de mercado emergente con un gran potencial económico y cultural como son los influencers, prestando servicios para aumentar el impacto del contenido generado por influencers. 
+    El servicio de marketing de influencers y creadores de contenido se enfoca en procesos tales como:
+    1. Influencers: conectar a miles de influencers con su potencial audencia, permite establecer colaboraciones con marcas por medio de campañas automatizadas, lo que aumenta su popularidad e ingresos.
+    2. Marcas: posibilita medir el impacto de cada publicación o contenido de tipo UGC, lo que ayuda a determinar el retorno de la inversión. 
+    3. Afiliados: son direccionados a los influencers que crean contenido de su preferencia, permitiendo conocer y consumir nuevos productos y servicios, creando mayor variedad y potencialmente menores precios.
+    4. Influencers y Marcas: la atribución precisa de ventas y recompensas al influencer, que es la medida directa de su impacto.
+    Este modelo crea una sinergia con el servicio de marketing de afiliados en el que el uso integrado de ambos servicios por medio del intercambio de información de interacción entre influencers y su audiencia, tanto real como potencial, permite acrecentar los resultados para afiliados, marcas e influencers por lo que la relación entre estos tres debe ser bien definida en el modelo de este servicio. 
+    El modelo debe poder incluir una gestión de relaciones con el cliente, tipo CRM, por lo que se debe tener en cuenta la información típica que se maneja a través de un CRM como las interacciones con marcas, preferencias de contenido y evaluaciones de desempeño. Esta información es el insumo para generar los beneficios a los diversos usuarios."
   }
 
-  Subdomain Gestión de Alianzas {
+  Subdomain ProgramasdeLealtad {
     type = CORE_DOMAIN
-    domainVisionStatement = "xxxxx"
+    domainVisionStatement = "El modelo de dominio del Programa de Lealtad debe mostrar cómo potencia, por un lado, a clientes de marcas y, por otro lado, a empleados leales de la marca para que actúen como embajadores de la marca, mediante una plataforma que gestione de forma integral el ciclo de vida de sus acciones de advocacy, iniciando con el reclutamiento su activación hasta la medición de sus impactos y entregas de incentivos económicos como beneficios mayores a los dados a afiliados.
+    Nuestra visión es habilitar a las marcas para construir y escalar comunidades auténticas que generen contenido, recomendaciones y referidos, fomentando el crecimiento orgánico basado en la confianza, a conexión emocional y la experiencia real con el producto.
+
+    Entre los resultados del Programa de Lealtad se espera que
+    1. Afiliados: sean promovidos automáticamente a embajadores si tienen un desempeño excepcional.
+    2. Embajadores: establecer una vía para que puedan convertirse en influencers.
+    3. Marcas: métricas de cómo el advocacy impulsa ventas y crecimiento de mercado.
+
+    Queremos que cada interacción de un embajador esté respaldada por datos, optimizada por analítica avanzada y recompensada de forma transparente, fortaleciendo así el vínculo entre la marca y su red de defensores."
   }
 
-  Subdomain Gestión de Contenidos {
+  Subdomain GestiondeAlianzas {
+    type = CORE_DOMAIN
+    domainVisionStatement = "Este modelo debe representar cómo centralizar y profesionalizar la administración de alianzas estratégicas B2B dentro de un ecosistema digital unificado, cubriendo todas las fases de relación:
+    1. Integración
+    2. Formalización contractual
+    3. Gestión de pagos
+    4. Análisis de desempeño
+
+    La propuesta de valor reside en:
+
+    1. Marcas: dashboard unificado de métricas financieras por cada relación comercial con influencers, embajadores, grupos de afiliados, etc., así como automatización de procesos operacionales como contratos y pagos.
+    2. Socios B2B: extracción de la información generada y almacenada en el sistema para el uso de sistemas de terceros.
+    3. Influencers: permite establecer alianzas (contratos comerciales) con marcas y llevar un registro del avance de cumplimiento en obligaciones contractuales de dichas alianzas.
+
+    Nuestra vision es convertir esta plataforma en la columna vertebral de cualquier red de partners , ofreciendo trazabilidad total sobre los acuerdos , transacciones y métricas clave, así como herramientras para el control centralizado de riesgos regulatorios y prevención de riesgos, buscamos que las organizaciones puedan expandir, optimizar y monetizar sus alianzas comerciales y tecnológicas de forma ágil, eficiente y escalable, alineando objetivos de negocio con métricas medibles de retorno.
+
+    Funciona como capa transaccional para los servicios de Programa de Lealtad y Marketing de Afiliados, con datos compartidos bajo reglas de negocio predefinidas."
+  }
+
+  Subdomain GestiondeContenidos {
     type = GENERIC_SUBDOMAIN
   }
 
-  Subdomain Generación de Reportes y Métricas {
-type = GENERIC_SUBDOMAIN
+  Subdomain GeneraciondeReportesyMetricas {
+    type = GENERIC_SUBDOMAIN
   }
 
-  Subdomain Gestión de Procesos {
-type = GENERIC_SUBDOMAIN
+  Subdomain GestiondeProcesos {
+    type = GENERIC_SUBDOMAIN
   }
 
-  Subdomain Gestión de Campañas {
-type = GENERIC_SUBDOMAIN
+  Subdomain GestiondeCampanias {
+    type = GENERIC_SUBDOMAIN
   }
 
-  Subdomain Gestión de Pagos {
-type = SUPPORTING_DOMAIN
+  Subdomain GestiondePagos {
+    type = SUPPORTING_DOMAIN
   }
 
-  Subdomain Gestión de Contratos {
-type = SUPPORTING_DOMAIN
+  Subdomain GestiondeContratos {
+    type = SUPPORTING_DOMAIN
   }
 
-  Subdomain Tracking y Atribución {
-type = SUPPORTING_DOMAIN
+  Subdomain TrackingyAtribucion {
+    type = SUPPORTING_DOMAIN
   }
 
-  Subdomain Cumplimiento Normativo y Auditoría {
-type = SUPPORTING_DOMAIN
+  Subdomain CumplimientoNormativoyAuditoria {
+    type = SUPPORTING_DOMAIN
   }
 
-  
 }
+
+BoundedContext ContextMarketingdeAfiliados implements MarketingdeAfiliados {
+}
+
+BoundedContext ContextMarketingdeInfluencersyCreadoresdeContenido implements MarketingdeInfluencersyCreadoresdeContenido {
+}
+
+BoundedContext ContextProgramasdeLealtad implements ProgramasdeLealtad {
+}
+
+BoundedContext ContextGestiondeAlianzas implements GestiondeAlianzas {
+}
+
+BoundedContext ContextGestiondeContenidos implements GestiondeContenidos {
+}
+
+BoundedContext ContextGeneraciondeReportesyMetricas implements GeneraciondeReportesyMetricas {
+}
+
+BoundedContext ContextGestiondeProcesos implements GestiondeProcesos {
+}
+
+BoundedContext ContextGestiondeCampanias implements GestiondeCampanias {
+}
+
+BoundedContext ContextGestiondePagos implements GestiondePagos {
+}
+
+BoundedContext ContextGestiondeContratos implements GestiondeContratos {
+}
+
+BoundedContext ContextTrackingyAtribucion implements TrackingyAtribucion {
+}
+
+BoundedContext ContextCumplimientoNormativoyAuditoria implements CumplimientoNormativoyAuditoria{
+}
+
+ContextMap GestiondeMarketingyFidelizacionContext {
+  state = AS_IS
+  contains ContextMarketingdeAfiliados
+  contains ContextMarketingdeInfluencersyCreadoresdeContenido
+  contains ContextProgramasdeLealtad
+  contains ContextGestiondeAlianzas
+  contains ContextGestiondeContenidos
+  contains ContextGeneraciondeReportesyMetricas
+  contains ContextGestiondeProcesos
+  contains ContextGestiondeCampanias
+  contains ContextGestiondePagos
+  contains ContextGestiondeContratos
+  contains ContextTrackingyAtribucion
+  contains ContextCumplimientoNormativoyAuditoria
+
+  ContextMarketingdeAfiliados <-> ContextGestiondeContratos
+
+  ContextMarketingdeAfiliados <-> ContextTrackingyAtribucion
+
+  ContextMarketingdeAfiliados <-> ContextGestiondePagos
+
+  ContextMarketingdeAfiliados <-> ContextGeneraciondeReportesyMetricas
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextGestiondeCampanias
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextTrackingyAtribucion
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextGeneraciondeReportesyMetricas
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextGestiondeProcesos
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextGestiondePagos
+
+  ContextMarketingdeInfluencersyCreadoresdeContenido <-> ContextGestiondeContenidos
+
+  ContextProgramasdeLealtad <-> ContextGestiondeContenidos
+
+  ContextProgramasdeLealtad <-> ContextGeneraciondeReportesyMetricas
+
+  ContextProgramasdeLealtad <-> ContextTrackingyAtribucion
+
+  ContextGestiondeAlianzas <-> ContextGestiondeProcesos
+
+  ContextGestiondeAlianzas <-> ContextGestiondeContratos
+
+  ContextGestiondeAlianzas <-> ContextGeneraciondeReportesyMetricas
+
+  ContextGestiondeAlianzas <-> ContextCumplimientoNormativoyAuditoria
+}
+
