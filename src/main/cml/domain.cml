@@ -1,0 +1,58 @@
+Domain Gestión de Marketing y Fidelización {
+  domainVisionStatement = "XXXXXX"
+
+  Subdomain Marketing de Afiliados {
+     type = CORE_DOMAIN
+    domainVisionStatement = "xxxxx"
+
+  }
+
+  Subdomain Marketing de Influencers y Creadores de Contenido {
+    type = CORE_DOMAIN
+    domainVisionStatement = "xxxxx"
+  }
+
+  Subdomain Programas de Lealtad {
+    type = CORE_DOMAIN
+    domainVisionStatement = "xxxxx"
+  }
+
+  Subdomain Gestión de Alianzas {
+    type = CORE_DOMAIN
+    domainVisionStatement = "xxxxx"
+  }
+
+  Subdomain Gestión de Contenidos {
+    type = GENERIC_SUBDOMAIN
+  }
+
+  Subdomain Generación de Reportes y Métricas {
+type = GENERIC_SUBDOMAIN
+  }
+
+  Subdomain Gestión de Procesos {
+type = GENERIC_SUBDOMAIN
+  }
+
+  Subdomain Gestión de Campañas {
+type = GENERIC_SUBDOMAIN
+  }
+
+  Subdomain Gestión de Pagos {
+type = SUPPORTING_DOMAIN
+  }
+
+  Subdomain Gestión de Contratos {
+type = SUPPORTING_DOMAIN
+  }
+
+  Subdomain Tracking y Atribución {
+type = SUPPORTING_DOMAIN
+  }
+
+  Subdomain Cumplimiento Normativo y Auditoría {
+type = SUPPORTING_DOMAIN
+  }
+
+  
+}
