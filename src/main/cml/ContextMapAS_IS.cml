@@ -1,0 +1,54 @@
+ContextMap AlpesPartnersMonolith {
+  type = SYSTEM_LANDSCAPE
+  state = AS_IS
+
+  contains ModuloPagos, ModuloContratos, ModuloTracking, ModuloReportes, ModuloInfluencers, ModuloLealtad, ModuloAfiliados, MotorCompliance, ModuloUsuarios, ModuloMarketplace
+
+  ModuloAfiliados [SK] <-> [SK] ModuloPagos
+  ModuloAfiliados [SK] <-> [SK] ModuloTracking
+  ModuloAfiliados [SK] <-> [SK] ModuloReportes
+  ModuloAfiliados [SK] <-> [SK] ModuloContratos
+  ModuloAfiliados [SK] <-> [SK] ModuloMarketplace
+  ModuloAfiliados [SK] <-> [SK] ModuloUsuarios
+  ModuloInfluencers [SK] <-> [SK] ModuloPagos
+  ModuloInfluencers [SK] <-> [SK] ModuloContratos
+  ModuloInfluencers [SK] <-> [SK] ModuloUsuarios
+  ModuloInfluencers [SK] <-> [SK] ModuloReportes
+  ModuloLealtad [SK] <-> [SK] ModuloPagos
+  ModuloLealtad [SK] <-> [SK] ModuloTracking
+  ModuloLealtad [SK] <-> [SK] ModuloReportes
+  ModuloPagos [SK] <-> [SK] MotorCompliance
+  MotorCompliance [SK] <-> [SK] ModuloReportes
+
+}
+
+BoundedContext ModuloPagos {
+    domainVisionStatement = "Este módulo del monolito es el encargado de gestionar todo lo relacionado a los pagos que recibira la marca, el creador de contenido y la plataforma"
+}
+BoundedContext ModuloContratos {
+    domainVisionStatement = "Este módulo del monolito se encarga de la administración automatizada de los contratos dentro de la plataforma."
+}
+BoundedContext ModuloTracking {
+    domainVisionStatement = "Este módulo del monolito se encarga de registrar clics, conversiones y ventas generadas por los afiliados, teniendo conexión con los módulos de afiliados y de pagos"
+}
+BoundedContext ModuloReportes {
+    domainVisionStatement = "Este módulo del monolito se encarga de los análisis financieros y el cálculo de métricas clave de desempeño (KPIs) de las diferentes campañas de marketing y del comportamiento de usuarios como afiliados, embajadores, influencers, etc."
+}
+BoundedContext ModuloInfluencers {
+    domainVisionStatement = "Este módulo del monolito se encarga de la búsqueda y gestión de alianzas entre las marcas y los creadores de contenido, teniendo conexión con los módulos de Usuarios, Contratos, pagos y reportes. Provee una gestión de relaciones tipo CRM."
+}
+BoundedContext ModuloLealtad {
+    domainVisionStatement = "Módulo del monolito encargado de gestionar la relación entre marcas con clientes leales y embajadores de marca, permitiendo seguir el impacto que tienen en  el número de afiliados y generación de ventas. También se encarga de los incentivos para dichos usuarios de la plataforma."
+}
+BoundedContext ModuloAfiliados {
+    domainVisionStatement = "Este módulo del monolito se encarga de la creación y la administración de los afiliados dentro de la plataforma. Hace uso de los módulos de Marketplace, Usuarios, reportes y tracking para incrementar el número de afiliados y la identificación de afiliados más efectivos para dirigir las campañas de marketing."
+}
+BoundedContext MotorCompliance {
+    domainVisionStatement = "Módulo del monolito que provee la validación y verificación de las diferentes operaciones realizadas en la plataforma tales como pagos, comisiones, impacto de contenido en ventas, etc."
+}
+BoundedContext ModuloUsuarios {
+    domainVisionStatement = "Este módulo del monolito se encarga de la creación y la administración de los usuarios dentro de la plataforma."
+}
+BoundedContext ModuloMarketplace {
+    domainVisionStatement = "Módulo del monolito en el que usuarios del sistema pueden ofrecer sus productos y servicios al resto de usuarios."
+}

@@ -1,8 +1,8 @@
 ![Context Mapper](https://raw.githubusercontent.com/wiki/ContextMapper/context-mapper-dsl/logo/cm-logo-github-small.png)
-# Demostración de Context Mapper para el IDE en línea
+# Context Mapper para el IDE en línea - Grupo Tocayos
 [![Build](https://github.com/ContextMapper/web-ide-demo/actions/workflows/build.yml/badge.svg)](https://github.com/ContextMapper/web-ide-demo/actions) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&repo=f-munozg/MISW4406-Tocayos) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Bienvenido al repositorio de demostración de Context Mapper. Aquí se ilustra cómo puedes configurar tu propio repositorio para utilizar Context Mapper en el IDE en línea de GitHub Codespaces.
+Bienvenido al repositorio de Context Mapper del grupo Tocayos.
 
 ## Comienza a utilizar Context Mapper ahora
 Inicia el Codespace y usa Context Mapper de inmediato:
@@ -12,17 +12,28 @@ Inicia el Codespace y usa Context Mapper de inmediato:
 </a>
 <br/><br/>
 
-## Abre el archivo de demostración
-En la carpeta `src/main/cml` encontrarás un pequeño **[demo en CML](./src/main/cml/demo.cml)** (aplicación de ejemplo DDD) con el que puedes empezar a familiarizarte con nuestro DSL y nuestras herramientas.
-Puedes encontrar más información sobre la herramienta y la documentación completa en nuestro sitio web [https://contextmapper.org/](https://contextmapper.org/).
+## Dominios y Subdominios
 
-## Crea tu propio repositorio de mapeo de contextos
-Puedes hacer un fork de este repositorio y hacer clic en el botón de arriba para iniciar el Codespace para tu repo.
+El modelo de dominios y subdominios puede encontrarse en la carpeta `src/main/cml` en el archivo `domain.cml`
 
-## Enlaces útiles
+![Modelo de dominio](./src/main/resources/models/domain_ContextMap.png?raw=true "Modelo de dominio")
 
- * [Más modelos de ejemplo](https://github.com/ContextMapper/context-mapper-examples)
- * [Referencia del lenguaje CML](https://contextmapper.org/docs/language-reference/)
- * [Tutorial de prototipado rápido](https://contextmapper.org/docs/rapid-ooad/)
- * [Refactorizaciones arquitectónicas](https://contextmapper.org/docs/architectural-refactorings/)
- * [Generadores](https://contextmapper.org/docs/generators/)
+## Lenguaje Ubicuo
+
+El flujo de Marketing de Afiliados y el lenguaje ubicuo pueden encontrarse en la carpeta `src/main/resources/models`, según sigue:
+- AS-IS: `LenguajeUbicuoAS-IS.jpg`
+- TO-BE: `LenguajeUbicuoTO-BE.jpg`
+
+![AS-IS](./src/main/resources/models/LenguajeUbicuoAS-IS.jpg?raw=true "AS-IS")
+
+![TO-BE](./src/main/resources/models/LenguajeUbicuoTO-BE.jpg?raw=true "TO-BE")
+
+## Mapa de Contexto
+
+Los mapas de contexto pueden encontrarse en la carpeta `src/main/cml` según sigue:
+- AS-IS: `ContextMapAS_IS.cml`
+- TO-BE: `ContextMapTO_BE.cml`
+
+![AS-IS](./src/main/resources/models/AS_IS_ContextMap.png?raw=true "AS-IS")
+
+![TO-BE](./src/main/resources/models/TO_BE_ContextMap.png?raw=true "TO-BE")

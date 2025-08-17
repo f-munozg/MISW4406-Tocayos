@@ -1,0 +1,86 @@
+ContextMap AlpesPartnersToBe {
+  type = SYSTEM_LANDSCAPE
+  state = TO_BE
+
+contains LoyaltyPrograms, ContentManagement, TrackingEngine, InfluencerMarketing
+contains UsersManagement, ReferralManagement, CampaignManagement, AnalyticsAndReporting
+contains Marketplace, PartnerLifecycleManagement, ContractManagement, ComplianceAndAuditing
+contains AffiliateManagement, PaymentEngine, DiscoveryEngine
+
+LoyaltyPrograms [U, OHS] -> [D, ACL] CampaignManagement
+LoyaltyPrograms [U, OHS, PL] -> [D, ACL] PartnerLifecycleManagement
+LoyaltyPrograms [U, OHS, PL]-> [D, ACL] AnalyticsAndReporting
+LoyaltyPrograms [U, OHS, PL] -> [D, CF] ReferralManagement
+LoyaltyPrograms [U, OHS] -> [D, ACL] TrackingEngine
+
+TrackingEngine [U, OHS, PL] -> [D, ACL] PaymentEngine
+
+InfluencerMarketing [U, OHS] -> [D, ACL] CampaignManagement
+InfluencerMarketing [U, OHS, PL]-> [D, ACL] AnalyticsAndReporting
+InfluencerMarketing [U, OHS, PL] -> [D, ACL] PartnerLifecycleManagement
+InfluencerMarketing [U, OHS] -> [D, ACL] DiscoveryEngine
+
+CampaignManagement [U, OHS, PL] -> [D, CF] ContentManagement
+
+Marketplace [U, OHS, PL] -> [D, ACL] AffiliateManagement
+ 
+PartnerLifecycleManagement [U, OHS, PL] -> [D, CF] ContractManagement
+PartnerLifecycleManagement [U, OHS, PL] -> [D] ComplianceAndAuditing
+PartnerLifecycleManagement [U, OHS, PL] -> [D, ACL] PaymentEngine
+PartnerLifecycleManagement [U, OHS, PL]-> [D, ACL] AnalyticsAndReporting
+PartnerLifecycleManagement [U, OHS, PL] -> [D] UsersManagement
+
+AffiliateManagement [U, OHS, PL] -> [D, ACL] PartnerLifecycleManagement
+AffiliateManagement [U, OHS] -> [D, ACL] DiscoveryEngine
+AffiliateManagement [U, OHS, PL]-> [D, ACL] AnalyticsAndReporting
+AffiliateManagement [U, OHS] -> [D, ACL] TrackingEngine
+
+}
+
+BoundedContext LoyaltyPrograms {
+    domainVisionStatement = "Microservicio encargado de gestionar la relación entre marcas con clientes leales y embajadores de marca, permitiendo seguir el impacto que tienen en  el número de afiliados y generación de ventas. También se encarga de los incentivos para dichos usuarios de la plataforma."
+}
+BoundedContext ContentManagement {
+    domainVisionStatement = "Este microservicio se encargará de la administración de los contenidos creados por los influenciadores para las marcas, estando asociados a las campañas"
+}
+BoundedContext TrackingEngine {
+    domainVisionStatement = "Este microservicio es el que se encargará de registrar clics, conversiones y ventas generadas por los afiliados. teniendo conexión con los microservicios de afiliados y de pagos"
+}
+BoundedContext InfluencerMarketing {
+    domainVisionStatement = "Este microservicio se encarga de la búsqueda y gestión de alianzas entre las marcas y los creadores de contenido, teniendo conexión con los microservicios de Discovery Engine, Campaign Management, analytics & reporting y partner lifecycle management. Provee una gestión de relaciones tipo CRM."
+}
+BoundedContext UsersManagement {
+    domainVisionStatement = "Este microservicio se encargará de la creación y la administración de los usuarios dentro de la plataforma."
+}
+BoundedContext ReferralManagement {
+    domainVisionStatement = "Este microservicio se encargará de la administración de los referidos, y su relación con el embajador y/o la campaña."
+}
+BoundedContext CampaignManagement {
+    domainVisionStatement = "Este microservicio se encargará de la administración de las campañas dentro de la plataforma, teniendo conexión con el microservicio de content management"
+}
+BoundedContext AnalyticsAndReporting {
+    domainVisionStatement = "Este microservicio se encargará de los análisis financieros y el cálculo de métricas clave de desempeño (KPIs) de las diferentes campañas de marketing y del comportamiento de usuarios como afiliados, embajadores, influencers, etc."
+}
+BoundedContext Marketplace {
+    domainVisionStatement = "Microservicio en el que usuarios del sistema pueden ofrecer sus productos y servicios al resto de usuarios."
+}
+BoundedContext PartnerLifecycleManagement {
+    domainVisionStatement = "Este microservicio será el encargado de gestionar el ciclo de vida de las relaciones comerciales generadas entre los diversos tipos de usuarios de la plataforma (marcas, afiliados, embajadores, influencers, etc.), relacionando eventos como pagos, beneficios, contratos, métricas, etc. a los usuarios de la aplicación y sus relaciones con otros usuarios."
+}
+BoundedContext ContractManagement {
+    domainVisionStatement = "Este microservicio se encargará de la administración automatizada de los contratos dentro de la plataforma."
+}
+BoundedContext ComplianceAndAuditing {
+    domainVisionStatement = "Microservicio que provee la validación y verificación de las diferentes operaciones realizadas en la plataforma tales como pagos, comisiones, impacto de contenido en ventas, etc."
+}
+BoundedContext AffiliateManagement {
+    domainVisionStatement = "Este microservicio se encargará de la creación y la administración de los afiliados dentro de la plataforma. Hace uso de los microservicios de Tracking Engine, Analytics & Reporting, Partner Lifecycle Management y Discovery Engine para incrementar el número de afiliados y la identificación de afiliados más efectivos para dirigir las campañas de marketing."
+}
+BoundedContext PaymentEngine {
+    domainVisionStatement = "Este microservicio será el encargado de gestionar todo lo relacionado a los pagos que recibira la marca, el creador de contenido y la plataforma"
+}
+BoundedContext DiscoveryEngine {
+    domainVisionStatement = "Este microservicio se encargará de la búsqueda de nuevos influencers o creadores de contenido así como del reclutamiento de nuevos afiliados."
+}
+
+
